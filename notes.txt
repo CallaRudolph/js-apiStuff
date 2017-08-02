@@ -1,0 +1,7 @@
+npm install gulp bower-files browser-sync vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint gulp-sass gulp-sourcemaps browserify --save-dev
+
+bower install jquery bootstrap --save
+
+If you do it this way, you will need to make your own package,json and bower.json files.
+
+Alternatively: You can choose to install a single gulp dependency, then a single bower dependency, and each will create the json files. Then you can do the mass install of the remaining dependencies.
