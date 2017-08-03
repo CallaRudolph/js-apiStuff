@@ -2,7 +2,6 @@ var Holiday = require('./../js/holiday.js').holidayModule;
 
 var displayHolidays = function(holidays) {
   holidays.forEach(function(holiday) {
-    console.log(holiday);
     $('.showResult').append("<li>" + holiday.name + " on " + holiday.date + "</li>");
   });
 };
@@ -10,6 +9,7 @@ var displayHolidays = function(holidays) {
 $(document).ready(function() {
   var currentHolidayObject = new Holiday();
   $('#input').click(function() {
+    $('.showResult').empty();
     var country = $('#country').val();
     var year = $('#year').val();
     var month = $('#month').val();
