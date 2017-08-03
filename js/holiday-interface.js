@@ -1,9 +1,13 @@
 var Holiday = require('./../js/holiday.js').holidayModule;
 
 var displayHolidays = function(holidays) {
-  holidays.forEach(function(holiday) {
-    $('.showResult').append("<li>" + holiday.name + " on " + holiday.date + "</li>");
-  });
+  if (holidays.length === 0) {
+    $('.showResult').append("There are no holidays for this search.");
+  } else {
+    holidays.forEach(function(holiday) {
+      $('.showResult').append("<li>" + holiday.name + " on " + holiday.date + "</li>");
+    });
+  }
 };
 
 $(document).ready(function() {
