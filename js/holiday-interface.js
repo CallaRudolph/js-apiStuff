@@ -11,9 +11,11 @@ var displayHolidays = function(holidays) {
 };
 
 $(document).ready(function() {
+  $('.showResult').hide();
   var currentHolidayObject = new Holiday();
   $('#input').click(function() {
     $('.showResult').empty();
+    $('.showResult').show();
     var country = $('#country').val();
     var year = $('#year').val();
     var month = $('#month').val();

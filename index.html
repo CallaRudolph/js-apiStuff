@@ -9,17 +9,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>Enter a country code, year, and month to view Historical Holiday information!</h1>
-      <h3><em>You will see the holidays for that month, along with the dates on which they occurred.</em></h3>
+      <div class="header">
+        <h1>Enter a country code, year, and month to view Historical Holiday information!</h1>
+        <h3><em>You will see the holidays for that month, along with the dates on which they occurred.</em></h3>
+      </div>
       <br>
       <div class="box">
-        <a href="https://en.wikipedia.org/wiki/ISO_3166-2">Click here to view formats for country codes</a><br><br>
+        <a class="link" href="https://en.wikipedia.org/wiki/ISO_3166-2">Click here to view formats for country codes</a><br><br>
         <input type="text" placeholder="Country Code (US)" id="country"><br><br>
         <input type="number" placeholder="Year (2014)" id="year"><br><br>
         <input type="number" placeholder="Month (12)" id="month"><br><br>
-        <button class="btn-info" id="input">View Holiday Info</button><br><br><br>
-        <div class="showResult">
-        </div>
+        <button class="btn-info" id="input">View Holiday Info</button>
+      </div><br><br><br>
+      <div class="showResult">
       </div>
     </div>
   </body>
